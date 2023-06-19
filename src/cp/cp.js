@@ -1,6 +1,12 @@
+import cp from 'node:child_process';
+import path from 'node:path';
+import * as url from 'url';
+
 const spawnChildProcess = async (args) => {
-    // Write your code here
+    const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+    const filePath = path.join(__dirname, './files/script.js');
+
+    cp.fork(filePath, [...args.split(' ')]);
 };
 
-// Put your arguments in function call to test this functionality
-spawnChildProcess( /* [someArgument1, someArgument2, ...] */);
+spawnChildProcess('--select --all');
