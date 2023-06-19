@@ -9,4 +9,4 @@ const spawnChildProcess = async (args) => {
     cp.fork(filePath, [...args.split(' ')]);
 };
 
-spawnChildProcess('--select --all');
+spawnChildProcess('--select --all --options');
