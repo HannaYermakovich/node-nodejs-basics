@@ -1,3 +1,3 @@
 # Node.js basics
 
-## !!! Please don't submit Pull Requests to this repository !!!
+# Hello stranger! To check my work, please, fork this repository and go to the nodejs-basics branch. There you can find my solution. You can use 'npm run + type necessary command' from package.json. Have a nice day! Thanks for checking!
